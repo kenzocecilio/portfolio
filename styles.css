@@ -55,7 +55,7 @@ header {
 
 }
 
-header.interface {
+header > .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,24 +88,26 @@ header nav.menu-desktop ul li {
 .kmc-abrir-menu i {
     color: #00ff08;
     font-size: 40px;
+
 }
 
 .menu-mobile {
-    background: #000;
+    background-color: #000;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 99999;
-    width: 70%;
+    width: 0%;
     overflow: hidden;
     transition: .2s;
 }
-.menu-mobile.kmc-abrir-menu{
+
+.menu-mobile.abrir-menu{
     width: 70%;
 }
 
-.menu-mobile.kmc-abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu ~ .overlay-menu{
     display: block;
 }
 
@@ -130,7 +132,7 @@ header nav.menu-desktop ul li {
     display: block;
 }
 
-.menu.mobile nav ul li a:hover {
+.menu-mobile nav ul li a:hover {
     background-color: #00ff08;
     color: #000;
 }
@@ -212,8 +214,10 @@ section.redessociais .flex {
 }
 
 .redessociais .redessociais-box i {
+    background-color: #000;
     font-size: 70px;
     color: #00ff08;
+    transition: .2s;
 }
 
 .redessociais .redessociais-box h3 {
